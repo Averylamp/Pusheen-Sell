@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D45B83E9BF45F22D73A18E8 /* Pods_HackMIT2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */; };
-		806EAA621D8DC06F00BABD42 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806EAA611D8DC06F00BABD42 /* GoogleService-Info-2.plist */; };
+		806EAA621D8DC06F00BABD42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806EAA611D8DC06F00BABD42 /* GoogleService-Info.plist */; };
 		BB7E4E111D8DBDCD00E0CCF8 /* ItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */; };
 		BB7E4E131D8DBDDF00E0CCF8 /* Capture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */; };
 		BB7E4E151D8DBDED00E0CCF8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		46484E08E304AED8AE1E1D84 /* Pods-HackMIT2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackMIT2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016.release.xcconfig"; sourceTree = "<group>"; };
 		7A169DB1CE735DE2C03B8B5A /* Pods-HackMIT2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackMIT2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016.debug.xcconfig"; sourceTree = "<group>"; };
-		806EAA611D8DC06F00BABD42 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		806EAA611D8DC06F00BABD42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackMIT2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemDetail.storyboard; sourceTree = "<group>"; };
 		BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Capture.storyboard; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 				D8EE787D1D8DAFFD00856D4A /* Assets.xcassets */,
 				D8EE787F1D8DAFFD00856D4A /* LaunchScreen.storyboard */,
 				D8EE78821D8DAFFD00856D4A /* Info.plist */,
-				806EAA611D8DC06F00BABD42 /* GoogleService-Info-2.plist */,
+				806EAA611D8DC06F00BABD42 /* GoogleService-Info.plist */,
 			);
 			path = HackMIT2016;
 			sourceTree = "<group>";
@@ -254,7 +254,7 @@
 				BB7E4E151D8DBDED00E0CCF8 /* Profile.storyboard in Resources */,
 				BB7E4E131D8DBDDF00E0CCF8 /* Capture.storyboard in Resources */,
 				D8EE78811D8DAFFD00856D4A /* LaunchScreen.storyboard in Resources */,
-				806EAA621D8DC06F00BABD42 /* GoogleService-Info-2.plist in Resources */,
+				806EAA621D8DC06F00BABD42 /* GoogleService-Info.plist in Resources */,
 				D8EE787E1D8DAFFD00856D4A /* Assets.xcassets in Resources */,
 				BB7E4E111D8DBDCD00E0CCF8 /* ItemDetail.storyboard in Resources */,
 				D8EE787C1D8DAFFD00856D4A /* HomePage.storyboard in Resources */,
