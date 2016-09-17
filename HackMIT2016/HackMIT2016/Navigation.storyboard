@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QN3-e3-tNs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QN3-e3-tNs">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="fRm-3J-F0G">
+            <objects>
+                <viewController id="fIv-5A-mT4" customClass="SplashViewController" customModule="HackMIT2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ge0-cj-poO"/>
+                        <viewControllerLayoutGuide type="bottom" id="WuW-oZ-gqZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IOj-hE-equ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="QN3-e3-tNs" kind="presentation" identifier="goHome" id="abx-RF-inS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nat-2j-yUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1257" y="217"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bSg-9C-ZZH">
             <objects>
-                <tabBarController id="QN3-e3-tNs" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tab" id="QN3-e3-tNs" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Ddg-WS-6r6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -29,41 +50,44 @@
         <scene sceneID="38I-xD-gcU">
             <objects>
                 <viewControllerPlaceholder storyboardName="HomePage" referencedIdentifier="HomeNavVC" id="xE3-mu-bG8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="4z2-Cj-0Qo"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="tab_test" id="4z2-Cj-0Qo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OM-Cd-k1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="264" y="-51"/>
+            <point key="canvasLocation" x="254" y="-22"/>
         </scene>
         <!--CaptureVC-->
         <scene sceneID="KLC-aH-uca">
             <objects>
                 <viewControllerPlaceholder storyboardName="Capture" referencedIdentifier="CaptureVC" id="dcc-xV-fUc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LYf-43-DSa"/>
+                    <tabBarItem key="tabBarItem" title="Upload" id="LYf-43-DSa"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e45-u8-ClP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247" y="70"/>
+            <point key="canvasLocation" x="246" y="99"/>
         </scene>
         <!--MessageListNavVC-->
         <scene sceneID="rCG-G1-qYW">
             <objects>
                 <viewControllerPlaceholder storyboardName="Message" referencedIdentifier="MessageListNavVC" id="KF5-Nt-HBO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fBD-yN-NOk"/>
+                    <tabBarItem key="tabBarItem" title="Chats" id="fBD-yN-NOk"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvW-vG-wVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="273" y="204"/>
+            <point key="canvasLocation" x="287" y="247"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="5tk-bJ-Acq">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileVC" id="3gO-A9-GVw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cli-Jc-s4n"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="cli-Jc-s4n"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fwz-MC-oWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="329"/>
+            <point key="canvasLocation" x="239" y="388"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_test" width="31" height="32"/>
+    </resources>
 </document>

@@ -1,53 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dRe-i3-aNN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dRe-i3-aNN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Splash View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomePageVC" id="BYZ-38-t0r" customClass="SplashViewController" customModule="HackMIT2016" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomePageVC" id="BYZ-38-t0r" customClass="HomeViewController" customModule="HackMIT2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-H1-SDw">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="ezh-Xv-ucz">
+                                    <size key="itemSize" width="144" height="251"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemCell" id="ZhC-9v-Dmf" customClass="ItemCell" customModule="HackMIT2016" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="5" width="144" height="251"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="144" height="251"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TBx-FM-eg1"/>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="TBx-FM-eg1" secondAttribute="trailing" id="PBL-qA-sdg"/>
+                                            <constraint firstItem="TBx-FM-eg1" firstAttribute="leading" secondItem="ZhC-9v-Dmf" secondAttribute="leading" id="UOx-Bj-7gI"/>
+                                            <constraint firstItem="TBx-FM-eg1" firstAttribute="top" secondItem="ZhC-9v-Dmf" secondAttribute="top" id="q77-iI-urN"/>
+                                            <constraint firstAttribute="bottom" secondItem="TBx-FM-eg1" secondAttribute="bottom" id="sBW-i6-N13"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="LUg-5E-C7w"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="u3a-ah-ji8"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Nx-H1-SDw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1gW-PF-9Oi"/>
+                            <constraint firstAttribute="trailing" secondItem="7Nx-H1-SDw" secondAttribute="trailing" id="OPH-it-YfX"/>
+                            <constraint firstAttribute="bottom" secondItem="7Nx-H1-SDw" secondAttribute="bottom" id="awy-95-61T"/>
+                            <constraint firstItem="7Nx-H1-SDw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="de3-RT-5RE"/>
+                            <constraint firstItem="7Nx-H1-SDw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sXg-DQ-5m5"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Xla-8q-euZ"/>
+                    <navigationItem key="navigationItem" title="Home" id="Xla-8q-euZ"/>
+                    <connections>
+                        <outlet property="collectionView" destination="7Nx-H1-SDw" id="qzE-QD-UFM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="37.331334332833585"/>
-        </scene>
-        <!--Home View Controller-->
-        <scene sceneID="fFR-VV-n9q">
-            <objects>
-                <viewController id="o6m-a2-H1y" customClass="HomeViewController" customModule="HackMIT2016" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YC0-Td-VCk"/>
-                        <viewControllerLayoutGuide type="bottom" id="Cgh-xz-Ge5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pb6-Sa-j03">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7U9-W0-Y7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1760.8" y="45.42728635682159"/>
+            <point key="canvasLocation" x="984.375" y="44.366197183098592"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="77s-sv-hvF">
             <objects>
                 <navigationController storyboardIdentifier="HomeNavVC" automaticallyAdjustsScrollViewInsets="NO" id="dRe-i3-aNN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A5a-7P-Cvc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="A5a-7P-Cvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

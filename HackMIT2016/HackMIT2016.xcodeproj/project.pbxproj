@@ -26,6 +26,7 @@
 		D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */; };
 		D8EE788F1D8DBE2800856D4A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788E1D8DBE2800856D4A /* Item.swift */; };
 		D8EE78911D8DBEA800856D4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78901D8DBEA800856D4A /* User.swift */; };
+		D8EE78931D8DC90300856D4A /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78921D8DC90300856D4A /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D8EE788E1D8DBE2800856D4A /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D8EE78901D8DBEA800856D4A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D8EE78921D8DC90300856D4A /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				D8EE787A1D8DAFFD00856D4A /* HomePage.storyboard */,
-				D8EE78881D8DBB6300856D4A /* SplashViewController.swift */,
 				D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */,
+				D8EE78921D8DC90300856D4A /* ItemCell.swift */,
 			);
 			name = HomePage;
 			sourceTree = "<group>";
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				BB7E4E191D8DBEE300E0CCF8 /* Navigation.storyboard */,
+				D8EE78881D8DBB6300856D4A /* SplashViewController.swift */,
 			);
 			name = Navigation;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				BB7E4E201D8DC03B00E0CCF8 /* MessageListViewController.swift in Sources */,
 				BB7E4E1D1D8DBF6A00E0CCF8 /* ProfileViewController.swift in Sources */,
 				BB7E4E221D8DC04900E0CCF8 /* ChatViewController.swift in Sources */,
+				D8EE78931D8DC90300856D4A /* ItemCell.swift in Sources */,
 				D8EE78891D8DBB6300856D4A /* SplashViewController.swift in Sources */,
 				D8EE788B1D8DBB8600856D4A /* CaptureViewController.swift in Sources */,
 				D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */,
