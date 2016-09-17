@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D45B83E9BF45F22D73A18E8 /* Pods_HackMIT2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */; };
 		BB7E4E111D8DBDCD00E0CCF8 /* ItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */; };
 		BB7E4E131D8DBDDF00E0CCF8 /* Capture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */; };
 		BB7E4E151D8DBDED00E0CCF8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */; };
@@ -21,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46484E08E304AED8AE1E1D84 /* Pods-HackMIT2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackMIT2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016.release.xcconfig"; sourceTree = "<group>"; };
+		7A169DB1CE735DE2C03B8B5A /* Pods-HackMIT2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackMIT2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016.debug.xcconfig"; sourceTree = "<group>"; };
+		836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackMIT2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemDetail.storyboard; sourceTree = "<group>"; };
 		BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Capture.storyboard; sourceTree = "<group>"; };
 		BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -41,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D45B83E9BF45F22D73A18E8 /* Pods_HackMIT2016.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B5FD3DB3EADD3CC987A7988 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE440C35A98D7EA70AD43D06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A169DB1CE735DE2C03B8B5A /* Pods-HackMIT2016.debug.xcconfig */,
+				46484E08E304AED8AE1E1D84 /* Pods-HackMIT2016.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D8EE786A1D8DAFFD00856D4A = {
 			isa = PBXGroup;
 			children = (
 				D8EE78751D8DAFFD00856D4A /* HackMIT2016 */,
 				D8EE78741D8DAFFD00856D4A /* Products */,
+				BE440C35A98D7EA70AD43D06 /* Pods */,
+				4B5FD3DB3EADD3CC987A7988 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8EE78851D8DAFFD00856D4A /* Build configuration list for PBXNativeTarget "HackMIT2016" */;
 			buildPhases = (
+				C2357CF54164BFC165482648 /* [CP] Check Pods Manifest.lock */,
 				D8EE786F1D8DAFFD00856D4A /* Sources */,
 				D8EE78701D8DAFFD00856D4A /* Frameworks */,
 				D8EE78711D8DAFFD00856D4A /* Resources */,
+				8F2E6177C9705534712C80C2 /* [CP] Embed Pods Frameworks */,
+				90855B8A9031C43EB3752B84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +179,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F2E6177C9705534712C80C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90855B8A9031C43EB3752B84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2357CF54164BFC165482648 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8EE786F1D8DAFFD00856D4A /* Sources */ = {
@@ -283,6 +358,7 @@
 		};
 		D8EE78861D8DAFFD00856D4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A169DB1CE735DE2C03B8B5A /* Pods-HackMIT2016.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PW5ET5HNB2;
@@ -297,6 +373,7 @@
 		};
 		D8EE78871D8DAFFD00856D4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46484E08E304AED8AE1E1D84 /* Pods-HackMIT2016.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PW5ET5HNB2;
