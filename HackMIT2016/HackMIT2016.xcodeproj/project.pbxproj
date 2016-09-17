@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D45B83E9BF45F22D73A18E8 /* Pods_HackMIT2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */; };
 		BB7E4E111D8DBDCD00E0CCF8 /* ItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */; };
 		BB7E4E131D8DBDDF00E0CCF8 /* Capture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */; };
 		BB7E4E151D8DBDED00E0CCF8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */; };
@@ -23,9 +24,14 @@
 		D8EE78891D8DBB6300856D4A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78881D8DBB6300856D4A /* SplashViewController.swift */; };
 		D8EE788B1D8DBB8600856D4A /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */; };
 		D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */; };
+		D8EE788F1D8DBE2800856D4A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788E1D8DBE2800856D4A /* Item.swift */; };
+		D8EE78911D8DBEA800856D4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78901D8DBEA800856D4A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46484E08E304AED8AE1E1D84 /* Pods-HackMIT2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackMIT2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016.release.xcconfig"; sourceTree = "<group>"; };
+		7A169DB1CE735DE2C03B8B5A /* Pods-HackMIT2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackMIT2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016.debug.xcconfig"; sourceTree = "<group>"; };
+		836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackMIT2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemDetail.storyboard; sourceTree = "<group>"; };
 		BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Capture.storyboard; sourceTree = "<group>"; };
 		BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -44,6 +50,8 @@
 		D8EE78881D8DBB6300856D4A /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D8EE788E1D8DBE2800856D4A /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D8EE78901D8DBEA800856D4A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,18 +59,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D45B83E9BF45F22D73A18E8 /* Pods_HackMIT2016.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B5FD3DB3EADD3CC987A7988 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB3758341D8DC492001051EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8EE788E1D8DBE2800856D4A /* Item.swift */,
+				D8EE78901D8DBEA800856D4A /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		BB7E4E161D8DBE0D00E0CCF8 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				D8EE787A1D8DAFFD00856D4A /* HomePage.storyboard */,
 				D8EE78881D8DBB6300856D4A /* SplashViewController.swift */,
 				D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */,
-				D8EE787A1D8DAFFD00856D4A /* HomePage.storyboard */,
 			);
 			name = HomePage;
 			sourceTree = "<group>";
@@ -70,8 +96,8 @@
 		BB7E4E171D8DBE1200E0CCF8 /* ItemDetail */ = {
 			isa = PBXGroup;
 			children = (
-				D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */,
 				BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */,
+				D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */,
 			);
 			name = ItemDetail;
 			sourceTree = "<group>";
@@ -79,8 +105,8 @@
 		BB7E4E181D8DBE1800E0CCF8 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
-				D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */,
 				BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */,
+				D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */,
 			);
 			name = Capture;
 			sourceTree = "<group>";
@@ -96,8 +122,8 @@
 		BB7E4E1E1D8DBF6F00E0CCF8 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */,
 				BB7E4E1C1D8DBF6A00E0CCF8 /* ProfileViewController.swift */,
+				BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -112,11 +138,22 @@
 			name = Messages;
 			sourceTree = "<group>";
 		};
+		BE440C35A98D7EA70AD43D06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A169DB1CE735DE2C03B8B5A /* Pods-HackMIT2016.debug.xcconfig */,
+				46484E08E304AED8AE1E1D84 /* Pods-HackMIT2016.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D8EE786A1D8DAFFD00856D4A = {
 			isa = PBXGroup;
 			children = (
 				D8EE78751D8DAFFD00856D4A /* HackMIT2016 */,
 				D8EE78741D8DAFFD00856D4A /* Products */,
+				BE440C35A98D7EA70AD43D06 /* Pods */,
+				4B5FD3DB3EADD3CC987A7988 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +175,7 @@
 				BB7E4E181D8DBE1800E0CCF8 /* Capture */,
 				BB7E4E1E1D8DBF6F00E0CCF8 /* Profile */,
 				BB7E4E251D8DC06C00E0CCF8 /* Messages */,
+				BB3758341D8DC492001051EC /* Model */,
 				D8EE787D1D8DAFFD00856D4A /* Assets.xcassets */,
 				D8EE787F1D8DAFFD00856D4A /* LaunchScreen.storyboard */,
 				D8EE78821D8DAFFD00856D4A /* Info.plist */,
@@ -152,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8EE78851D8DAFFD00856D4A /* Build configuration list for PBXNativeTarget "HackMIT2016" */;
 			buildPhases = (
+				C2357CF54164BFC165482648 /* [CP] Check Pods Manifest.lock */,
 				D8EE786F1D8DAFFD00856D4A /* Sources */,
 				D8EE78701D8DAFFD00856D4A /* Frameworks */,
 				D8EE78711D8DAFFD00856D4A /* Resources */,
+				8F2E6177C9705534712C80C2 /* [CP] Embed Pods Frameworks */,
+				90855B8A9031C43EB3752B84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +258,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8F2E6177C9705534712C80C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90855B8A9031C43EB3752B84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2357CF54164BFC165482648 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D8EE786F1D8DAFFD00856D4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -229,7 +318,9 @@
 				D8EE788B1D8DBB8600856D4A /* CaptureViewController.swift in Sources */,
 				D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */,
 				D8EE78791D8DAFFD00856D4A /* HomeViewController.swift in Sources */,
+				D8EE788F1D8DBE2800856D4A /* Item.swift in Sources */,
 				D8EE78771D8DAFFD00856D4A /* AppDelegate.swift in Sources */,
+				D8EE78911D8DBEA800856D4A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +441,7 @@
 		};
 		D8EE78861D8DAFFD00856D4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A169DB1CE735DE2C03B8B5A /* Pods-HackMIT2016.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -364,6 +456,7 @@
 		};
 		D8EE78871D8DAFFD00856D4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46484E08E304AED8AE1E1D84 /* Pods-HackMIT2016.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
