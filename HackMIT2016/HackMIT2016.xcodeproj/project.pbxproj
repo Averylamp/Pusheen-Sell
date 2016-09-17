@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1D45B83E9BF45F22D73A18E8 /* Pods_HackMIT2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */; };
-		806EAA621D8DC06F00BABD42 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806EAA611D8DC06F00BABD42 /* GoogleService-Info-2.plist */; };
+		801836EE1D8DCF560079A466 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801836EB1D8DCF560079A466 /* FBSDKCoreKit.framework */; };
+		801836EF1D8DCF560079A466 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801836EC1D8DCF560079A466 /* FBSDKLoginKit.framework */; };
+		801836F01D8DCF560079A466 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801836ED1D8DCF560079A466 /* FBSDKShareKit.framework */; };
+		801836F21D8DD7AC0079A466 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801836F11D8DD7AC0079A466 /* Bolts.framework */; };
+		801836F51D8DF3050079A466 /* Fireb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801836F41D8DF3050079A466 /* Fireb.swift */; };
+		806EAA621D8DC06F00BABD42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806EAA611D8DC06F00BABD42 /* GoogleService-Info.plist */; };
+		806EAA641D8DC5D100BABD42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806EAA631D8DC5D100BABD42 /* Constants.swift */; };
 		BB7E4E111D8DBDCD00E0CCF8 /* ItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */; };
 		BB7E4E131D8DBDDF00E0CCF8 /* Capture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */; };
 		BB7E4E151D8DBDED00E0CCF8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */; };
@@ -32,7 +38,14 @@
 /* Begin PBXFileReference section */
 		46484E08E304AED8AE1E1D84 /* Pods-HackMIT2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackMIT2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016.release.xcconfig"; sourceTree = "<group>"; };
 		7A169DB1CE735DE2C03B8B5A /* Pods-HackMIT2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackMIT2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackMIT2016/Pods-HackMIT2016.debug.xcconfig"; sourceTree = "<group>"; };
-		806EAA611D8DC06F00BABD42 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		801836EB1D8DCF560079A466 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		801836EC1D8DCF560079A466 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		801836ED1D8DCF560079A466 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		801836F11D8DD7AC0079A466 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		801836F31D8DE8340079A466 /* HackMIT2016.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackMIT2016.entitlements; sourceTree = "<group>"; };
+		801836F41D8DF3050079A466 /* Fireb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fireb.swift; sourceTree = "<group>"; };
+		806EAA611D8DC06F00BABD42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		806EAA631D8DC5D100BABD42 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackMIT2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemDetail.storyboard; sourceTree = "<group>"; };
 		BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Capture.storyboard; sourceTree = "<group>"; };
@@ -61,7 +74,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801836F21D8DD7AC0079A466 /* Bolts.framework in Frameworks */,
+				801836F01D8DCF560079A466 /* FBSDKShareKit.framework in Frameworks */,
 				1D45B83E9BF45F22D73A18E8 /* Pods_HackMIT2016.framework in Frameworks */,
+				801836EE1D8DCF560079A466 /* FBSDKCoreKit.framework in Frameworks */,
+				801836EF1D8DCF560079A466 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +88,10 @@
 		4B5FD3DB3EADD3CC987A7988 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				801836F11D8DD7AC0079A466 /* Bolts.framework */,
+				801836EB1D8DCF560079A466 /* FBSDKCoreKit.framework */,
+				801836EC1D8DCF560079A466 /* FBSDKLoginKit.framework */,
+				801836ED1D8DCF560079A466 /* FBSDKShareKit.framework */,
 				836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */,
 			);
 			name = Frameworks;
@@ -81,6 +102,8 @@
 			children = (
 				D8EE788E1D8DBE2800856D4A /* Item.swift */,
 				D8EE78901D8DBEA800856D4A /* User.swift */,
+				806EAA631D8DC5D100BABD42 /* Constants.swift */,
+				801836F41D8DF3050079A466 /* Fireb.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -170,6 +193,7 @@
 		D8EE78751D8DAFFD00856D4A /* HackMIT2016 */ = {
 			isa = PBXGroup;
 			children = (
+				801836F31D8DE8340079A466 /* HackMIT2016.entitlements */,
 				D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */,
 				BB7E4E1B1D8DBEEC00E0CCF8 /* Navigation */,
 				BB7E4E161D8DBE0D00E0CCF8 /* HomePage */,
@@ -181,7 +205,7 @@
 				D8EE787D1D8DAFFD00856D4A /* Assets.xcassets */,
 				D8EE787F1D8DAFFD00856D4A /* LaunchScreen.storyboard */,
 				D8EE78821D8DAFFD00856D4A /* Info.plist */,
-				806EAA611D8DC06F00BABD42 /* GoogleService-Info-2.plist */,
+				806EAA611D8DC06F00BABD42 /* GoogleService-Info.plist */,
 			);
 			path = HackMIT2016;
 			sourceTree = "<group>";
@@ -221,7 +245,13 @@
 				TargetAttributes = {
 					D8EE78721D8DAFFD00856D4A = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F4L7RXFB6Z;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -251,7 +281,7 @@
 				BB7E4E151D8DBDED00E0CCF8 /* Profile.storyboard in Resources */,
 				BB7E4E131D8DBDDF00E0CCF8 /* Capture.storyboard in Resources */,
 				D8EE78811D8DAFFD00856D4A /* LaunchScreen.storyboard in Resources */,
-				806EAA621D8DC06F00BABD42 /* GoogleService-Info-2.plist in Resources */,
+				806EAA621D8DC06F00BABD42 /* GoogleService-Info.plist in Resources */,
 				D8EE787E1D8DAFFD00856D4A /* Assets.xcassets in Resources */,
 				BB7E4E111D8DBDCD00E0CCF8 /* ItemDetail.storyboard in Resources */,
 				D8EE787C1D8DAFFD00856D4A /* HomePage.storyboard in Resources */,
@@ -316,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB7E4E201D8DC03B00E0CCF8 /* MessageListViewController.swift in Sources */,
+				806EAA641D8DC5D100BABD42 /* Constants.swift in Sources */,
 				BB7E4E1D1D8DBF6A00E0CCF8 /* ProfileViewController.swift in Sources */,
 				BB7E4E221D8DC04900E0CCF8 /* ChatViewController.swift in Sources */,
 				D8EE78891D8DBB6300856D4A /* SplashViewController.swift in Sources */,
@@ -324,6 +355,7 @@
 				D8EE78791D8DAFFD00856D4A /* HomeViewController.swift in Sources */,
 				D8EE788F1D8DBE2800856D4A /* Item.swift in Sources */,
 				D8EE78771D8DAFFD00856D4A /* AppDelegate.swift in Sources */,
+				801836F51D8DF3050079A466 /* Fireb.swift in Sources */,
 				D8EE78911D8DBEA800856D4A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +480,12 @@
 			baseConfigurationReference = 7A169DB1CE735DE2C03B8B5A /* Pods-HackMIT2016.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = HackMIT2016/HackMIT2016.entitlements;
+				DEVELOPMENT_TEAM = F4L7RXFB6Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HackMIT2016/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -463,7 +500,12 @@
 			baseConfigurationReference = 46484E08E304AED8AE1E1D84 /* Pods-HackMIT2016.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = HackMIT2016/HackMIT2016.entitlements;
+				DEVELOPMENT_TEAM = F4L7RXFB6Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HackMIT2016/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
