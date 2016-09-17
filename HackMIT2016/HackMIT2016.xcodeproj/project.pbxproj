@@ -13,6 +13,7 @@
 		801836F01D8DCF560079A466 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801836ED1D8DCF560079A466 /* FBSDKShareKit.framework */; };
 		801836F21D8DD7AC0079A466 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801836F11D8DD7AC0079A466 /* Bolts.framework */; };
 		801836F51D8DF3050079A466 /* Fireb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801836F41D8DF3050079A466 /* Fireb.swift */; };
+		801836F71D8E0F820079A466 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801836F61D8E0F820079A466 /* HomePage.storyboard */; };
 		806EAA621D8DC06F00BABD42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806EAA611D8DC06F00BABD42 /* GoogleService-Info.plist */; };
 		806EAA641D8DC5D100BABD42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806EAA631D8DC5D100BABD42 /* Constants.swift */; };
 		BB7E4E111D8DBDCD00E0CCF8 /* ItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */; };
@@ -23,9 +24,9 @@
 		BB7E4E201D8DC03B00E0CCF8 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7E4E1F1D8DC03B00E0CCF8 /* MessageListViewController.swift */; };
 		BB7E4E221D8DC04900E0CCF8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7E4E211D8DC04900E0CCF8 /* ChatViewController.swift */; };
 		BB7E4E241D8DC05700E0CCF8 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E231D8DC05700E0CCF8 /* Message.storyboard */; };
+		D8A469141D8DE9A800866912 /* ItemDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A469131D8DE9A800866912 /* ItemDetailCell.swift */; };
 		D8EE78771D8DAFFD00856D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */; };
 		D8EE78791D8DAFFD00856D4A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */; };
-		D8EE787C1D8DAFFD00856D4A /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EE787A1D8DAFFD00856D4A /* HomePage.storyboard */; };
 		D8EE787E1D8DAFFD00856D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8EE787D1D8DAFFD00856D4A /* Assets.xcassets */; };
 		D8EE78811D8DAFFD00856D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EE787F1D8DAFFD00856D4A /* LaunchScreen.storyboard */; };
 		D8EE78891D8DBB6300856D4A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78881D8DBB6300856D4A /* SplashViewController.swift */; };
@@ -33,6 +34,7 @@
 		D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */; };
 		D8EE788F1D8DBE2800856D4A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788E1D8DBE2800856D4A /* Item.swift */; };
 		D8EE78911D8DBEA800856D4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78901D8DBEA800856D4A /* User.swift */; };
+		D8EE78931D8DC90300856D4A /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78921D8DC90300856D4A /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,7 @@
 		801836F11D8DD7AC0079A466 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		801836F31D8DE8340079A466 /* HackMIT2016.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackMIT2016.entitlements; sourceTree = "<group>"; };
 		801836F41D8DF3050079A466 /* Fireb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fireb.swift; sourceTree = "<group>"; };
+		801836F61D8E0F820079A466 /* HomePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		806EAA611D8DC06F00BABD42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		806EAA631D8DC5D100BABD42 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackMIT2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,10 +58,10 @@
 		BB7E4E1F1D8DC03B00E0CCF8 /* MessageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
 		BB7E4E211D8DC04900E0CCF8 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		BB7E4E231D8DC05700E0CCF8 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../Message.storyboard; sourceTree = "<group>"; };
+		D8A469131D8DE9A800866912 /* ItemDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailCell.swift; sourceTree = "<group>"; };
 		D8EE78731D8DAFFD00856D4A /* HackMIT2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackMIT2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D8EE787B1D8DAFFD00856D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomePage.storyboard; sourceTree = "<group>"; };
 		D8EE787D1D8DAFFD00856D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8EE78801D8DAFFD00856D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8EE78821D8DAFFD00856D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D8EE788E1D8DBE2800856D4A /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D8EE78901D8DBEA800856D4A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D8EE78921D8DC90300856D4A /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +115,9 @@
 		BB7E4E161D8DBE0D00E0CCF8 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				D8EE787A1D8DAFFD00856D4A /* HomePage.storyboard */,
-				D8EE78881D8DBB6300856D4A /* SplashViewController.swift */,
 				D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */,
+				D8EE78921D8DC90300856D4A /* ItemCell.swift */,
+				801836F61D8E0F820079A466 /* HomePage.storyboard */,
 			);
 			name = HomePage;
 			sourceTree = "<group>";
@@ -123,6 +127,7 @@
 			children = (
 				BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */,
 				D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */,
+				D8A469131D8DE9A800866912 /* ItemDetailCell.swift */,
 			);
 			name = ItemDetail;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				BB7E4E191D8DBEE300E0CCF8 /* Navigation.storyboard */,
+				D8EE78881D8DBB6300856D4A /* SplashViewController.swift */,
 			);
 			name = Navigation;
 			sourceTree = "<group>";
@@ -245,7 +251,7 @@
 				TargetAttributes = {
 					D8EE78721D8DAFFD00856D4A = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = F4L7RXFB6Z;
+						DevelopmentTeam = PW5ET5HNB2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -284,9 +290,9 @@
 				806EAA621D8DC06F00BABD42 /* GoogleService-Info.plist in Resources */,
 				D8EE787E1D8DAFFD00856D4A /* Assets.xcassets in Resources */,
 				BB7E4E111D8DBDCD00E0CCF8 /* ItemDetail.storyboard in Resources */,
-				D8EE787C1D8DAFFD00856D4A /* HomePage.storyboard in Resources */,
 				BB7E4E241D8DC05700E0CCF8 /* Message.storyboard in Resources */,
 				BB7E4E1A1D8DBEE300E0CCF8 /* Navigation.storyboard in Resources */,
+				801836F71D8E0F820079A466 /* HomePage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +353,10 @@
 			files = (
 				BB7E4E201D8DC03B00E0CCF8 /* MessageListViewController.swift in Sources */,
 				806EAA641D8DC5D100BABD42 /* Constants.swift in Sources */,
+				D8A469141D8DE9A800866912 /* ItemDetailCell.swift in Sources */,
 				BB7E4E1D1D8DBF6A00E0CCF8 /* ProfileViewController.swift in Sources */,
 				BB7E4E221D8DC04900E0CCF8 /* ChatViewController.swift in Sources */,
+				D8EE78931D8DC90300856D4A /* ItemCell.swift in Sources */,
 				D8EE78891D8DBB6300856D4A /* SplashViewController.swift in Sources */,
 				D8EE788B1D8DBB8600856D4A /* CaptureViewController.swift in Sources */,
 				D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */,
@@ -363,14 +371,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D8EE787A1D8DAFFD00856D4A /* HomePage.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8EE787B1D8DAFFD00856D4A /* Base */,
-			);
-			name = HomePage.storyboard;
-			sourceTree = "<group>";
-		};
 		D8EE787F1D8DAFFD00856D4A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -481,7 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HackMIT2016/HackMIT2016.entitlements;
-				DEVELOPMENT_TEAM = F4L7RXFB6Z;
+				DEVELOPMENT_TEAM = PW5ET5HNB2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -501,7 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HackMIT2016/HackMIT2016.entitlements;
-				DEVELOPMENT_TEAM = F4L7RXFB6Z;
+				DEVELOPMENT_TEAM = PW5ET5HNB2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
