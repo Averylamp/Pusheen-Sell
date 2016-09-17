@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Message List View Controller-->
+        <scene sceneID="HkR-8e-TXW">
+            <objects>
+                <viewController storyboardIdentifier="MessageListVC" id="4Ju-fq-RaE" customClass="MessageListViewController" customModule="HackMIT2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="77W-tM-z9U"/>
+                        <viewControllerLayoutGuide type="bottom" id="rLW-C9-eRK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Oq-RM-nQy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cw7-LP-4xB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="co2-AR-iSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="239.73013493253376"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="MGU-BC-mec">
+            <objects>
+                <viewController id="eub-mz-qz1" customClass="ChatViewController" customModule="HackMIT2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yes-dy-Nhn"/>
+                        <viewControllerLayoutGuide type="bottom" id="myv-EO-qSp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lEv-p8-9KF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PxV-Ci-qJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="239.73013493253376"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Na-3L-QnH">
+            <objects>
+                <navigationController storyboardIdentifier="MessageListNavVC" automaticallyAdjustsScrollViewInsets="NO" id="K3k-2G-962" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jds-Yw-rRI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Ju-fq-RaE" kind="relationship" relationship="rootViewController" id="cPn-7p-Cky"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ly-1P-Vvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-415.19999999999999" y="239.73013493253376"/>
+        </scene>
+    </scenes>
+</document>
