@@ -10,6 +10,11 @@
 		BB7E4E111D8DBDCD00E0CCF8 /* ItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */; };
 		BB7E4E131D8DBDDF00E0CCF8 /* Capture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */; };
 		BB7E4E151D8DBDED00E0CCF8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */; };
+		BB7E4E1A1D8DBEE300E0CCF8 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E191D8DBEE300E0CCF8 /* Navigation.storyboard */; };
+		BB7E4E1D1D8DBF6A00E0CCF8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7E4E1C1D8DBF6A00E0CCF8 /* ProfileViewController.swift */; };
+		BB7E4E201D8DC03B00E0CCF8 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7E4E1F1D8DC03B00E0CCF8 /* MessageListViewController.swift */; };
+		BB7E4E221D8DC04900E0CCF8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7E4E211D8DC04900E0CCF8 /* ChatViewController.swift */; };
+		BB7E4E241D8DC05700E0CCF8 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E231D8DC05700E0CCF8 /* Message.storyboard */; };
 		D8EE78771D8DAFFD00856D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */; };
 		D8EE78791D8DAFFD00856D4A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */; };
 		D8EE787C1D8DAFFD00856D4A /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EE787A1D8DAFFD00856D4A /* HomePage.storyboard */; };
@@ -24,6 +29,11 @@
 		BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemDetail.storyboard; sourceTree = "<group>"; };
 		BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Capture.storyboard; sourceTree = "<group>"; };
 		BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		BB7E4E191D8DBEE300E0CCF8 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		BB7E4E1C1D8DBF6A00E0CCF8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BB7E4E1F1D8DC03B00E0CCF8 /* MessageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		BB7E4E211D8DC04900E0CCF8 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		BB7E4E231D8DC05700E0CCF8 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../Message.storyboard; sourceTree = "<group>"; };
 		D8EE78731D8DAFFD00856D4A /* HackMIT2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackMIT2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB7E4E161D8DBE0D00E0CCF8 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				D8EE78881D8DBB6300856D4A /* SplashViewController.swift */,
+				D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */,
+				D8EE787A1D8DAFFD00856D4A /* HomePage.storyboard */,
+			);
+			name = HomePage;
+			sourceTree = "<group>";
+		};
+		BB7E4E171D8DBE1200E0CCF8 /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */,
+				BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */,
+			);
+			name = ItemDetail;
+			sourceTree = "<group>";
+		};
+		BB7E4E181D8DBE1800E0CCF8 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */,
+				BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */,
+			);
+			name = Capture;
+			sourceTree = "<group>";
+		};
+		BB7E4E1B1D8DBEEC00E0CCF8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BB7E4E191D8DBEE300E0CCF8 /* Navigation.storyboard */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		BB7E4E1E1D8DBF6F00E0CCF8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */,
+				BB7E4E1C1D8DBF6A00E0CCF8 /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		BB7E4E251D8DC06C00E0CCF8 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				BB7E4E1F1D8DC03B00E0CCF8 /* MessageListViewController.swift */,
+				BB7E4E211D8DC04900E0CCF8 /* ChatViewController.swift */,
+				BB7E4E231D8DC05700E0CCF8 /* Message.storyboard */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
 		D8EE786A1D8DAFFD00856D4A = {
 			isa = PBXGroup;
 			children = (
@@ -67,14 +132,12 @@
 			isa = PBXGroup;
 			children = (
 				D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */,
-				D8EE78881D8DBB6300856D4A /* SplashViewController.swift */,
-				D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */,
-				D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */,
-				D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */,
-				D8EE787A1D8DAFFD00856D4A /* HomePage.storyboard */,
-				BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */,
-				BB7E4E121D8DBDDF00E0CCF8 /* Capture.storyboard */,
-				BB7E4E141D8DBDED00E0CCF8 /* Profile.storyboard */,
+				BB7E4E1B1D8DBEEC00E0CCF8 /* Navigation */,
+				BB7E4E161D8DBE0D00E0CCF8 /* HomePage */,
+				BB7E4E171D8DBE1200E0CCF8 /* ItemDetail */,
+				BB7E4E181D8DBE1800E0CCF8 /* Capture */,
+				BB7E4E1E1D8DBF6F00E0CCF8 /* Profile */,
+				BB7E4E251D8DC06C00E0CCF8 /* Messages */,
 				D8EE787D1D8DAFFD00856D4A /* Assets.xcassets */,
 				D8EE787F1D8DAFFD00856D4A /* LaunchScreen.storyboard */,
 				D8EE78821D8DAFFD00856D4A /* Info.plist */,
@@ -114,7 +177,6 @@
 				TargetAttributes = {
 					D8EE78721D8DAFFD00856D4A = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = PW5ET5HNB2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -148,6 +210,8 @@
 				D8EE787E1D8DAFFD00856D4A /* Assets.xcassets in Resources */,
 				BB7E4E111D8DBDCD00E0CCF8 /* ItemDetail.storyboard in Resources */,
 				D8EE787C1D8DAFFD00856D4A /* HomePage.storyboard in Resources */,
+				BB7E4E241D8DC05700E0CCF8 /* Message.storyboard in Resources */,
+				BB7E4E1A1D8DBEE300E0CCF8 /* Navigation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7E4E201D8DC03B00E0CCF8 /* MessageListViewController.swift in Sources */,
+				BB7E4E1D1D8DBF6A00E0CCF8 /* ProfileViewController.swift in Sources */,
+				BB7E4E221D8DC04900E0CCF8 /* ChatViewController.swift in Sources */,
 				D8EE78891D8DBB6300856D4A /* SplashViewController.swift in Sources */,
 				D8EE788B1D8DBB8600856D4A /* CaptureViewController.swift in Sources */,
 				D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */,
@@ -285,7 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PW5ET5HNB2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HackMIT2016/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -299,7 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PW5ET5HNB2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HackMIT2016/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
