@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		D8EE78771D8DAFFD00856D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */; };
-		D8EE78791D8DAFFD00856D4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78781D8DAFFD00856D4A /* ViewController.swift */; };
+		D8EE78791D8DAFFD00856D4A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */; };
 		D8EE787C1D8DAFFD00856D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EE787A1D8DAFFD00856D4A /* Main.storyboard */; };
 		D8EE787E1D8DAFFD00856D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8EE787D1D8DAFFD00856D4A /* Assets.xcassets */; };
 		D8EE78811D8DAFFD00856D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EE787F1D8DAFFD00856D4A /* LaunchScreen.storyboard */; };
+		D8EE78891D8DBB6300856D4A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78881D8DBB6300856D4A /* SplashViewController.swift */; };
+		D8EE788B1D8DBB8600856D4A /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */; };
+		D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D8EE78731D8DAFFD00856D4A /* HackMIT2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackMIT2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8EE78781D8DAFFD00856D4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8EE787B1D8DAFFD00856D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8EE787D1D8DAFFD00856D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8EE78801D8DAFFD00856D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8EE78821D8DAFFD00856D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8EE78881D8DBB6300856D4A /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */,
-				D8EE78781D8DAFFD00856D4A /* ViewController.swift */,
+				D8EE78881D8DBB6300856D4A /* SplashViewController.swift */,
+				D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */,
+				D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */,
+				D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */,
 				D8EE787A1D8DAFFD00856D4A /* Main.storyboard */,
 				D8EE787D1D8DAFFD00856D4A /* Assets.xcassets */,
 				D8EE787F1D8DAFFD00856D4A /* LaunchScreen.storyboard */,
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8EE78791D8DAFFD00856D4A /* ViewController.swift in Sources */,
+				D8EE78891D8DBB6300856D4A /* SplashViewController.swift in Sources */,
+				D8EE788B1D8DBB8600856D4A /* CaptureViewController.swift in Sources */,
+				D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */,
+				D8EE78791D8DAFFD00856D4A /* HomeViewController.swift in Sources */,
 				D8EE78771D8DAFFD00856D4A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +275,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PW5ET5HNB2;
 				INFOPLIST_FILE = HackMIT2016/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nathangitter.HackMIT2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PW5ET5HNB2;
 				INFOPLIST_FILE = HackMIT2016/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nathangitter.HackMIT2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
