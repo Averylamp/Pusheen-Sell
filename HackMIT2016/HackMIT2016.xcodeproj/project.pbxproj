@@ -19,6 +19,8 @@
 		D8EE78891D8DBB6300856D4A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78881D8DBB6300856D4A /* SplashViewController.swift */; };
 		D8EE788B1D8DBB8600856D4A /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */; };
 		D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */; };
+		D8EE788F1D8DBE2800856D4A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE788E1D8DBE2800856D4A /* Item.swift */; };
+		D8EE78911D8DBEA800856D4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78901D8DBEA800856D4A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		D8EE78881D8DBB6300856D4A /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D8EE788E1D8DBE2800856D4A /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D8EE78901D8DBEA800856D4A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				D8EE78881D8DBB6300856D4A /* SplashViewController.swift */,
 				D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */,
 				D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */,
+				D8EE788E1D8DBE2800856D4A /* Item.swift */,
+				D8EE78901D8DBEA800856D4A /* User.swift */,
 				D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */,
 				D8EE787A1D8DAFFD00856D4A /* HomePage.storyboard */,
 				BB7E4E101D8DBDCD00E0CCF8 /* ItemDetail.storyboard */,
@@ -237,7 +243,9 @@
 				D8EE788B1D8DBB8600856D4A /* CaptureViewController.swift in Sources */,
 				D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */,
 				D8EE78791D8DAFFD00856D4A /* HomeViewController.swift in Sources */,
+				D8EE788F1D8DBE2800856D4A /* Item.swift in Sources */,
 				D8EE78771D8DAFFD00856D4A /* AppDelegate.swift in Sources */,
+				D8EE78911D8DBEA800856D4A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
