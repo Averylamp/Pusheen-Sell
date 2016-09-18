@@ -22,9 +22,14 @@ class CaptureViewController: UIViewController, AVCaptureFileOutputRecordingDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Capture VC")
-        initializeVideoSession()
         self.itemDetailView.alpha = 0
         self.overlayView.alpha = 0
+        self.overlayView.alpha = 0
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        initializeVideoSession()
+        
     }
     
     
