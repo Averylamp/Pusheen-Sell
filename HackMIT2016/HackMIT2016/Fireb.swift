@@ -17,8 +17,19 @@ class Fireb: NSObject {
     }
     
     
-    static func addItem(withTitle title: String, desciption desc : String, Price price:String, Count count : String){
-        Fireba.rootRef.child("Items").child(count).setValue(["title" : title, "description" : desc,"price" : price])
+    static func addItem(withTitle title: String, desciption desc : String, Price price:String, closure: @escaping () -> (Void)){
+        Fireba.rootRef.child("Items").childByAutoId().setValue(["title" : title, "description" : desc,"price" : price]) { (error, ref) in
+            if error != nil {
+                print("Error posting item")
+                
+            }else{
+                
+            }
+            closure()
+        }
+        
+        
+        
     }
     
     static func getAllitem(childUrl : String){

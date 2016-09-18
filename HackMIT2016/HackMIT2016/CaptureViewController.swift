@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import SwiftSpinner
 
 class CaptureViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
     
@@ -145,6 +146,16 @@ class CaptureViewController: UIViewController, AVCaptureFileOutputRecordingDeleg
     
     @IBAction func postPressed(_ sender: UIButton) {
         //
+        SwiftSpinner.show("Uploading \(nameTextField.text!)")
+        
+        Fireb.addItem(withTitle: nameTextField.text!, desciption: descTextView.text, Price: priceTextField.text!){
+            SwiftSpinner.hide()
+            self.dismiss(animated: true, completion: { 
+                print("Dissmissed VC")
+            })
+        }
+        
+        
     }
 
 }

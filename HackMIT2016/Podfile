@@ -11,5 +11,6 @@ pod 'Firebase/Messaging'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
   # Pods for HackMIT2016
-
+pod 'SwiftSpinner'
+pod 'MBProgressHUD'
 end
