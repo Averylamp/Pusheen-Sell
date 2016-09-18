@@ -18,7 +18,7 @@
 		806EAA641D8DC5D100BABD42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806EAA631D8DC5D100BABD42 /* Constants.swift */; };
 		BB3758361D8DC6CF001051EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3758351D8DC6CF001051EC /* AVFoundation.framework */; };
 		BB7E4E1A1D8DBEE300E0CCF8 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E191D8DBEE300E0CCF8 /* Navigation.storyboard */; };
-		D8A469141D8DE9A800866912 /* ItemDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A469131D8DE9A800866912 /* ItemDetailCell.swift */; };
+		D8A469161D8E138000866912 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A469151D8E138000866912 /* CaptureButton.swift */; };
 		D8EE78771D8DAFFD00856D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */; };
 		D8EE78791D8DAFFD00856D4A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */; };
 		D8EE787E1D8DAFFD00856D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8EE787D1D8DAFFD00856D4A /* Assets.xcassets */; };
@@ -46,7 +46,7 @@
 		836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackMIT2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3758351D8DC6CF001051EC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BB7E4E191D8DBEE300E0CCF8 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
-		D8A469131D8DE9A800866912 /* ItemDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailCell.swift; sourceTree = "<group>"; };
+		D8A469151D8E138000866912 /* CaptureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
 		D8EE78731D8DAFFD00856D4A /* HackMIT2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackMIT2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -107,10 +107,10 @@
 			children = (
 				D8EE78781D8DAFFD00856D4A /* HomeViewController.swift */,
 				D8EE78921D8DC90300856D4A /* ItemCell.swift */,
+				D8A469151D8E138000866912 /* CaptureButton.swift */,
 				D8EE788A1D8DBB8600856D4A /* CaptureViewController.swift */,
 				801836F61D8E0F820079A466 /* HomePage.storyboard */,
 				D8EE788C1D8DBB9600856D4A /* DetailViewController.swift */,
-				D8A469131D8DE9A800866912 /* ItemDetailCell.swift */,
 			);
 			name = HomePage;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 				TargetAttributes = {
 					D8EE78721D8DAFFD00856D4A = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 9XWYL3K4YT;
+						DevelopmentTeam = PW5ET5HNB2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -299,12 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				806EAA641D8DC5D100BABD42 /* Constants.swift in Sources */,
-				D8A469141D8DE9A800866912 /* ItemDetailCell.swift in Sources */,
 				D8EE78931D8DC90300856D4A /* ItemCell.swift in Sources */,
 				D8EE78891D8DBB6300856D4A /* SplashViewController.swift in Sources */,
 				D8EE788B1D8DBB8600856D4A /* CaptureViewController.swift in Sources */,
 				D8EE788D1D8DBB9600856D4A /* DetailViewController.swift in Sources */,
 				D8EE78791D8DAFFD00856D4A /* HomeViewController.swift in Sources */,
+				D8A469161D8E138000866912 /* CaptureButton.swift in Sources */,
 				D8EE788F1D8DBE2800856D4A /* Item.swift in Sources */,
 				D8EE78771D8DAFFD00856D4A /* AppDelegate.swift in Sources */,
 				801836F51D8DF3050079A466 /* Fireb.swift in Sources */,
@@ -425,7 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HackMIT2016/HackMIT2016.entitlements;
-				DEVELOPMENT_TEAM = 9XWYL3K4YT;
+				DEVELOPMENT_TEAM = PW5ET5HNB2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -445,7 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HackMIT2016/HackMIT2016.entitlements;
-				DEVELOPMENT_TEAM = 9XWYL3K4YT;
+				DEVELOPMENT_TEAM = PW5ET5HNB2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

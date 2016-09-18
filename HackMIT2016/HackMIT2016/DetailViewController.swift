@@ -10,14 +10,14 @@ import UIKit
 
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    var item: Item?
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.interactivePopGestureRecognizer?.delegate = nil // this is a hack to get the swipe back to work
-
-        self.view.backgroundColor = UIColor.black
         
     }
     

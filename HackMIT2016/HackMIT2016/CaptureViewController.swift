@@ -13,21 +13,17 @@ class CaptureViewController: UIViewController, AVCaptureFileOutputRecordingDeleg
     
     @IBOutlet weak var cameraPreviewView: UIView!
     @IBOutlet weak var overlayView: UIView!
-    @IBOutlet weak var showTabBarButton: UIButton!
     @IBOutlet weak var itemDetailView: UIView!
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var descTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Capture VC")
         initializeVideoSession()
-    
-        
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        setTabBarVisible(visible: false)
-    }
-    override func viewDidDisappear(_ animated: Bool) {
-        setTabBarVisible(visible: true)
+        self.itemDetailView.alpha = 0
     }
     
     
@@ -121,7 +117,6 @@ class CaptureViewController: UIViewController, AVCaptureFileOutputRecordingDeleg
         loopPreviewLayer = AVPlayerLayer(player: loopPreviewPlayer)
         loopPreviewLayer.frame = self.view.bounds
         self.cameraPreviewView.layer.addSublayer(loopPreviewLayer)
-        self.cameraPreviewView.layer.insertSublayer(loopPreviewLayer, below: self.showTabBarButton.layer)
         
         loopPreviewPlayer.play()
         loopPreviewPlayer.actionAtItemEnd = .none
@@ -138,25 +133,12 @@ class CaptureViewController: UIViewController, AVCaptureFileOutputRecordingDeleg
         self.loopPreviewPlayer.play()
     }
     
-    func setTabBarVisible(visible:Bool){
-        print("Hiding tab bar \(self.tabBarController?.tabBar.frame.origin.y) < \(self.view.frame.maxY)")
-        if ((self.tabBarController?.tabBar.frame.origin.y)! < self.view.frame.maxY) == visible {
-            print("cancled")
-            return
-        }
-        let height = self.tabBarController!.tabBar.frame.height
-        let offset = visible ? -height : height
-        print("Offset \(offset)")
-//        self.tabBarController!.tabBar.frame.offsetBy(dx: 0, dy: offset)
-        UIView.animate(withDuration: 0.5) {
-            
-            self.tabBarController!.tabBar.frame = CGRect(origin: CGPoint(x:0, y: self.tabBarController!.tabBar.frame.origin.y + offset), size: self.tabBarController!.tabBar.frame.size)
-        }
-        
-    }
     @IBAction func cancelVideoClicked(_ sender: AnyObject) {
-        
-        self.setTabBarVisible(visible: true)
+        //
+    }
+    
+    @IBAction func postPressed(_ sender: UIButton) {
+        //
     }
 
 }
