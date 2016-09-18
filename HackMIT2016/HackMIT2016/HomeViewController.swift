@@ -15,11 +15,15 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var captureButton: CaptureButton!
     
     private let padding: CGFloat = 8
+    var items : [Item] = [Item]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.captureButton.addTarget(self, action: #selector(HomeViewController.captureButtonAction), for: UIControlEvents.touchUpInside)
+        Fireb.getAllitem { (items) in
+            self.items = items
+        }
         
     }
     

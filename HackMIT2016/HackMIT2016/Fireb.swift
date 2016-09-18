@@ -29,20 +29,27 @@ class Fireb: NSObject {
         }
         
         
-        
     }
     
-    static func getAllitem(childUrl : String){
+    static func getAllitem(callback: @escaping ([Item]) -> Void){
         Fireba.rootRef.child("Items").observeSingleEvent(of: .value, with: { (snapshot) in
             print(snapshot.childrenCount)
+            var Items : [Item] = [Item]()
             let enumerator = snapshot.children
             while let rest = enumerator.nextObject() as? FIRDataSnapshot {
                 print(rest.value)
+                let item : [String : String] = ["title" : (rest.childSnapshot(forPath: "title").value as? String)!,
+                                                "description" : (rest.childSnapshot(forPath: "description").value as? String)!,
+                                                "price" : (rest.childSnapshot(forPath: "price").value as? String)!]
+                Items.append(Item.init(dic: item))
+                callback(Items)
             }
-            // ...
+            print(Items)
         }) { (error) in
             print(error.localizedDescription)
+            callback([])
         }
+        
     }
     
     static func childAdded(){
