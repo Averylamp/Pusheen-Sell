@@ -10,10 +10,20 @@ import UIKit
 
 class ItemCell: UICollectionViewCell {
     
-    var item: Item?
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    
+    var item: Item? {
+        didSet {
+            // update view contents here
+            titleLabel.text = item?.name
+            subtitleLabel.text = item?.description
+        }
+    }
     
     override func layoutSubviews() {
-        self.backgroundColor = UIColor.orange
+        super.layoutSubviews()
+        self.backgroundColor = UIColor.darkGray
     }
     
 }

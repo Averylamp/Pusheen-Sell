@@ -24,6 +24,7 @@ class CaptureViewController: UIViewController, AVCaptureFileOutputRecordingDeleg
         print("Capture VC")
         initializeVideoSession()
         self.itemDetailView.alpha = 0
+        self.overlayView.alpha = 0
     }
     
     
