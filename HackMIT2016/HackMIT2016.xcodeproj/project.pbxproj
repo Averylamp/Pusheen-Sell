@@ -202,7 +202,7 @@
 				TargetAttributes = {
 					D8EE78721D8DAFFD00856D4A = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = PW5ET5HNB2;
+						DevelopmentTeam = 9XWYL3K4YT;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -425,7 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HackMIT2016/HackMIT2016.entitlements;
-				DEVELOPMENT_TEAM = PW5ET5HNB2;
+				DEVELOPMENT_TEAM = 9XWYL3K4YT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -445,7 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HackMIT2016/HackMIT2016.entitlements;
-				DEVELOPMENT_TEAM = PW5ET5HNB2;
+				DEVELOPMENT_TEAM = 9XWYL3K4YT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
