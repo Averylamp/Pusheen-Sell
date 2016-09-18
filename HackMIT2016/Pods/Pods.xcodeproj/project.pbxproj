@@ -547,12 +547,9 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
-<<<<<<< HEAD
-=======
 					D10F7B494B48703126A30A430AB73E0F = {
 						LastSwiftMigration = 0800;
 					};
->>>>>>> db07f60e26012118c0a1973eccf5f1a1c38e6b3f
 					ECBA9B7ACEC5E1736009016A57B3E6F6 = {
 						LastSwiftMigration = 0800;
 					};

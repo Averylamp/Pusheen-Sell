@@ -86,9 +86,11 @@ class Fireb: NSObject {
         // Create a reference to "mountains.jpg"
         let mountainsRef = storageRef.child(fileName + ".mp4")
         // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
-        mountainsRef.data(withMaxSize: 10 * 1024 * 1024) { (data, error) -> Void in
+        mountainsRef.data(withMaxSize: 100 * 1024 * 1024) { (data, error) -> Void in
             if (error != nil) {
+                print("Error -\(error)")
                 // Uh-oh, an error occurred!
+                
                 callback(Data())
             } else {
                 // Data for "images/island.jpg" is returned

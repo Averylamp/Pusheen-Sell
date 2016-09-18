@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreMotion
+import AVFoundation
+
 
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
@@ -31,11 +33,19 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
                     self.videos.append(data)
                     
                     let filemanager = FileManager.default
-                    let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(i.key + ".mp3")
-                    if !filemanager.fileExists(atPath: paths){
-                        let url : NSURL = NSURL(string: i.key + ".mp3")!
+//                    let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(i.key + ".mp3")
+                    let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+                    let docDirectoryPath = paths.first!
+                    let path = i.key + ".mp4"
+                    let pathCameraInput = docDirectoryPath.stringByAppendingPathComponent(path: path)
+                    let url = URL(fileURLWithPath: pathCameraInput)
+                    if !filemanager.fileExists(atPath: pathCameraInput){
+                        
+//                        let url : NSURL = NSURL(string:"/" +  i.key + ".mp4")!
                         do {
                             try data.write(to: url as URL, options: Data.WritingOptions.atomicWrite)
+                            print("Writing video to Documents \(data.count)")
+                            self.collectionView.reloadData()
                         } catch {
                             print(error)
                         }
@@ -113,6 +123,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return self.items.count
     }
     
+    
+    var allPlayers = [AVPlayer]()
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell : ItemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! ItemCell
         
@@ -120,6 +132,18 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
             let item : Item = self.items[indexPath.row]
             cell.titleLabel.text = item.name
             cell.subtitleLabel.text = item.description
+            let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+            let docDirectoryPath = paths.first!
+            let path = item.key + ".mp4"
+            let pathCameraInput = docDirectoryPath.stringByAppendingPathComponent(path: path)
+            let url = URL(fileURLWithPath: pathCameraInput)
+            let player = AVPlayer(url: url)
+            let playerLayer = AVPlayerLayer(player: player)
+            playerLayer.frame = cell.frame
+            
+            cell.contentView.layer.insertSublayer(playerLayer, at: 0)
+            player.play()
+            
         }
         return cell
     }
