@@ -17,4 +17,16 @@ struct User {
     /// The last name of the user.
     var lastName: String
     
+    /// The id associated with the user
+    var id : String
+    
+    /// The email id of the user
+    var email : String
+    
+    /// The location of the user
+    var location : String
+    
+    /// The profile pic of the user
+    var profilePic : String
+    
 }

@@ -17,4 +17,10 @@ struct Item {
     /// A paragraph description of the item.
     var description: String
     
+    /// The price of the item
+    var price : String
+    
+    /// The seller id
+    var sellerId : String
+    
 }
