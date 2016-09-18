@@ -9,6 +9,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Messaging'
 pod 'Firebase/Auth'
+pod 'Firebase/Storage'
   # Pods for HackMIT2016
 
 end
