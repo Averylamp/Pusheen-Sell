@@ -37,7 +37,7 @@ class Fireb: NSObject {
             print(Items)
         }) { (error) in
             print(error.localizedDescription)
-            callback(nil)
+            callback([])
         }
         
     }
