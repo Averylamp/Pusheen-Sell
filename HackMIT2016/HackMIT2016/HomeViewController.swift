@@ -24,6 +24,15 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let titleView = UIImageView(frame: CGRect(x: 0, y: 0, width: 180, height: 40))
+        titleView.image = UIImage(named: "navbar")
+        self.navigationItem.titleView = titleView
+        
+        self.navigationController?.navigationBar.barTintColor = Color.green
+        
+        self.view.backgroundColor = Color.yellow
+        self.collectionView.backgroundColor = UIColor.clear
+        
         self.captureButton.addTarget(self, action: #selector(HomeViewController.captureButtonAction), for: UIControlEvents.touchUpInside)
         Fireb.getAllitem { (items) in
             self.items = items
@@ -139,7 +148,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
             let url = URL(fileURLWithPath: pathCameraInput)
             let player = AVPlayer(url: url)
             let playerLayer = AVPlayerLayer(player: player)
-            playerLayer.frame = cell.frame
+            playerLayer.frame = cell.bounds
             
             cell.contentView.layer.insertSublayer(playerLayer, at: 0)
             player.play()
