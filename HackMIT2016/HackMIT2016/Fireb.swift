@@ -17,15 +17,15 @@ class Fireb: NSObject {
     }
     
     
-    static func addItem(withTitle title: String, desciption desc : String, Price price:String, closure: @escaping () -> (Void)){
+    static func addItem(withTitle title: String, desciption desc : String, Price price:String, closure: @escaping (String) -> (Void)){
         Fireba.rootRef.child("Items").childByAutoId().setValue(["title" : title, "description" : desc,"price" : price]) { (error, ref) in
             if error != nil {
                 print("Error posting item")
                 
             }else{
-                
+                closure(ref.key)
             }
-            closure()
+            
         }
         
         
@@ -40,7 +40,8 @@ class Fireb: NSObject {
                 print(rest.value)
                 let item : [String : String] = ["title" : (rest.childSnapshot(forPath: "title").value as? String)!,
                                                 "description" : (rest.childSnapshot(forPath: "description").value as? String)!,
-                                                "price" : (rest.childSnapshot(forPath: "price").value as? String)!]
+                                                "price" : (rest.childSnapshot(forPath: "price").value as? String)!,
+                                                "key" : (rest.key as? String)!]
                 Items.append(Item.init(dic: item))
                 callback(Items)
             }
@@ -63,7 +64,7 @@ class Fireb: NSObject {
         // Create a storage reference from our storage service
         let storageRef = storage.reference(forURL: "gs://hackmit2016-31521.appspot.com")
         // Create a reference to "mountains.jpg"
-        let mountainsRef = storageRef.child(fileName + ".jpg")
+        let mountainsRef = storageRef.child(fileName + ".mp4")
         let uploadTask = mountainsRef.put(data as Data, metadata: nil) { metadata, error in
             if (error != nil) {
                 // Uh-oh, an error occurred!
@@ -81,7 +82,7 @@ class Fireb: NSObject {
         // Create a storage reference from our storage service
         let storageRef = storage.reference(forURL: "gs://hackmit2016-31521.appspot.com")
         // Create a reference to "mountains.jpg"
-        let mountainsRef = storageRef.child(fileName + ".jpg")
+        let mountainsRef = storageRef.child(fileName + ".mp4")
         // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
         mountainsRef.data(withMaxSize: 10 * 1024 * 1024) { (data, error) -> Void in
             if (error != nil) {

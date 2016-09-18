@@ -149,6 +149,8 @@ class CaptureViewController: UIViewController, AVCaptureFileOutputRecordingDeleg
         SwiftSpinner.show("Uploading \(nameTextField.text!)")
         
         Fireb.addItem(withTitle: nameTextField.text!, desciption: descTextView.text, Price: priceTextField.text!){
+            (key) in
+            
             SwiftSpinner.hide()
             self.dismiss(animated: true, completion: { 
                 print("Dissmissed VC")

@@ -19,6 +19,9 @@ public struct Item {
     
     /// The price of the item
     public var price : String
+    
+    /// The price of the item
+    public var key : String
 
     
     public init(dic : [String : String]){
@@ -38,6 +41,12 @@ public struct Item {
             self.price = price
         }else{
             self.price = ""
+        }
+        
+        if let key = dic["key"]{
+            self.key = key
+        }else{
+            self.key = ""
         }
         
     }
