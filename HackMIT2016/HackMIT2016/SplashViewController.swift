@@ -31,7 +31,9 @@ class SplashViewController: UIViewController, FBSDKLoginButtonDelegate  {
     @IBAction func login(_ sender: AnyObject) {
         
         //Fireb.addItem(withTitle: "Item 1", desciption: "Good Item", Price: "$100")
-        Fireb.getAllitem()
+        Fireb.getAllitem(){allItems in
+            
+        }
             
     }
     
