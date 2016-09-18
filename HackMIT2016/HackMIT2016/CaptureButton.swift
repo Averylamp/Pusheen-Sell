@@ -10,9 +10,9 @@ import UIKit
 
 class CaptureButton: UIButton {
     
-    fileprivate var icon: UIImageView!
+    private var icon: UIImageView!
     
-    fileprivate let iconSize = CGSize(width: 40, height: 40)
+    private let iconSize = CGSize(width: 40, height: 40)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,7 +26,7 @@ class CaptureButton: UIButton {
     
     func setup() {
         
-        self.backgroundColor = UIColor.red
+        self.backgroundColor = Color.pink
         
         self.icon = UIImageView(frame: CGRect(x: 10, y: 10, width: self.iconSize.width, height: self.iconSize.height))
         self.icon.image = UIImage(named: "camera")
@@ -39,6 +39,13 @@ class CaptureButton: UIButton {
         super.layoutSubviews()
         
         self.layer.cornerRadius = self.frame.width / 2
+        
+        let shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.bounds.width / 2)
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 3)
+        self.layer.shadowOpacity = 0.2
+        self.layer.shadowPath = shadowPath.cgPath
+        self.layer.shadowRadius = 5
         
     }
     
