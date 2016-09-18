@@ -14,7 +14,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBOutlet weak var captureButton: CaptureButton!
     
-    private let padding: CGFloat = 8
+    fileprivate let padding: CGFloat = 8
     var items : [Item] = [Item]()
     
     override func viewDidLoad() {

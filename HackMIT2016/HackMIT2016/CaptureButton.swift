@@ -10,9 +10,9 @@ import UIKit
 
 class CaptureButton: UIButton {
     
-    private var icon: UIImageView!
+    fileprivate var icon: UIImageView!
     
-    private let iconSize = CGSize(width: 40, height: 40)
+    fileprivate let iconSize = CGSize(width: 40, height: 40)
     
     override init(frame: CGRect) {
         super.init(frame: frame)

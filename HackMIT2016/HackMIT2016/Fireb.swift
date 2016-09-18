@@ -12,7 +12,7 @@ import FirebaseStorage
 
 class Fireb: NSObject {
 
-    static func save(childUrl : String){
+    static func save(_ childUrl : String){
         Fireba.rootRef.child(childUrl).setValue(["username": "hackmit"])
     }
     
@@ -32,7 +32,7 @@ class Fireb: NSObject {
         
     }
     
-    static func getAllitem(callback: @escaping ([Item]) -> Void){
+    static func getAllitem(_ callback: @escaping ([Item]) -> Void){
         Fireba.rootRef.child("Items").observeSingleEvent(of: .value, with: { (snapshot) in
             print(snapshot.childrenCount)
             var Items : [Item] = [Item]()
@@ -60,7 +60,7 @@ class Fireb: NSObject {
         })
     }
     
-    static func uploadFileToServer(fileName : String, data : NSData){
+    static func uploadFileToServer(_ fileName : String, data : Data, callback: @escaping ()-> Void){
         let storage = FIRStorage.storage()
         // Create a storage reference from our storage service
         let storageRef = storage.reference(forURL: "gs://hackmit2016-31521.appspot.com")
@@ -68,17 +68,19 @@ class Fireb: NSObject {
         let mountainsRef = storageRef.child(fileName + ".mp4")
         let uploadTask = mountainsRef.put(data as Data, metadata: nil) { metadata, error in
             if (error != nil) {
+                print("Error uploading video - \(error)")
                 // Uh-oh, an error occurred!
             } else {
                 // Metadata contains file metadata such as size, content-type, and download URL.
                 let downloadURL = metadata!.downloadURL
+                callback()
             }
         }
         
 
     }
     
-    static func downloadFileFromServer(fileName : String){
+    static func downloadFileFromServer(_ fileName : String, callback: @escaping (Data) -> Void){
         let storage = FIRStorage.storage()
         // Create a storage reference from our storage service
         let storageRef = storage.reference(forURL: "gs://hackmit2016-31521.appspot.com")
@@ -88,9 +90,11 @@ class Fireb: NSObject {
         mountainsRef.data(withMaxSize: 10 * 1024 * 1024) { (data, error) -> Void in
             if (error != nil) {
                 // Uh-oh, an error occurred!
+                callback(Data())
             } else {
                 // Data for "images/island.jpg" is returned
                 // ... let islandImage: UIImage! = UIImage(data: data!)
+                callback(data!)
             }
         }
     }
