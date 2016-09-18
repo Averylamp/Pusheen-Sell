@@ -9,18 +9,36 @@
 import Foundation
 
 /// An Item that a user can sell, browse, or purchase.
-struct Item {
+public struct Item {
     
     /// The name of the item.
-    var name: String
+    public var name: String
     
     /// A paragraph description of the item.
-    var description: String
+    public var description: String
     
     /// The price of the item
-    var price : String
+    public var price : String
+
     
-    /// The seller id
-    var sellerId : String
-    
+    public init(dic : [String : String]){
+        if let name = dic["title"]{
+            self.name = name
+        }else{
+            self.name = ""
+        }
+        
+        if let description = dic["description"]{
+            self.description = description
+        }else{
+            self.description = ""
+        }
+        
+        if let price = dic["price"]{
+            self.price = price
+        }else{
+            self.price = ""
+        }
+        
+    }
 }
