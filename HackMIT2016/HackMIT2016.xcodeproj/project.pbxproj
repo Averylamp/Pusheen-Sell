@@ -42,6 +42,7 @@
 		801836F31D8DE8340079A466 /* HackMIT2016.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackMIT2016.entitlements; sourceTree = "<group>"; };
 		801836F41D8DF3050079A466 /* Fireb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fireb.swift; sourceTree = "<group>"; };
 		801836F61D8E0F820079A466 /* HomePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		801836F81D8E590B0079A466 /* HackMIT2016-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackMIT2016-BridgingHeader.h"; sourceTree = "<group>"; };
 		806EAA611D8DC06F00BABD42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		806EAA631D8DC5D100BABD42 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackMIT2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +140,7 @@
 		D8EE786A1D8DAFFD00856D4A = {
 			isa = PBXGroup;
 			children = (
+				801836F81D8E590B0079A466 /* HackMIT2016-BridgingHeader.h */,
 				D8EE78751D8DAFFD00856D4A /* HackMIT2016 */,
 				D8EE78741D8DAFFD00856D4A /* Products */,
 				BE440C35A98D7EA70AD43D06 /* Pods */,

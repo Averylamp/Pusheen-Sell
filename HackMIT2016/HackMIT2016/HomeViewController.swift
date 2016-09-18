@@ -24,6 +24,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.captureButton.addTarget(self, action: #selector(HomeViewController.captureButtonAction), for: UIControlEvents.touchUpInside)
         Fireb.getAllitem { (items) in
             self.items = items
+            self.collectionView.reloadData()
         }
         
     }
@@ -85,11 +86,17 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     // MARK: - Collection View Delegate Functions
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return self.items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath)
+        let cell : ItemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell", for: indexPath) as! ItemCell
+        
+        if self.items.count > 0 {
+            let item : Item = self.items[indexPath.row]
+            cell.titleLabel.text = item.name
+            cell.subtitleLabel.text = item.description
+        }
         return cell
     }
     
