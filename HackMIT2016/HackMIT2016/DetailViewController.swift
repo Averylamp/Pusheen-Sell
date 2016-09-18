@@ -19,7 +19,7 @@ class DetailViewController: UIViewController{
     var item: Item?
     var moviePlayer: MPMoviePlayerController?
     var tapGesture : UITapGestureRecognizer?
-    var show = true;
+    var show = true
     
     @IBOutlet weak var collectionView: UICollectionView!
     
