@@ -17,6 +17,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     fileprivate let padding: CGFloat = 8
     var items : [Item] = [Item]()
+    var videos : [Data] = [Data]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,29 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         Fireb.getAllitem { (items) in
             self.items = items
             self.collectionView.reloadData()
+            for i : Item in items{
+                Fireb.downloadFileFromServer(i.key, callback: { data in
+                    self.videos.append(data)
+                    
+                    let filemanager = FileManager.default
+                    let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(i.key + ".mp3")
+                    if !filemanager.fileExists(atPath: paths){
+                        let url : NSURL = NSURL(string: i.key + ".mp3")!
+                        do {
+                            try data.write(to: url as URL, options: Data.WritingOptions.atomicWrite)
+                        } catch {
+                            print(error)
+                        }
+                    }else{
+                        print("Already video present created.")
+                    }
+                    
+                    
+                    
+                    
+                    print("Data length for item : \(i.name) is \(data.count)")
+                })
+            }
         }
         
     }
