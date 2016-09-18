@@ -95,7 +95,7 @@ class CaptureViewController: UIViewController, AVCaptureFileOutputRecordingDeleg
     
     var recordingState = false
     func startCameraRecording(){
-            recordingState = true
+        recordingState = true
         videoOutput.startRecording(toOutputFileURL: tempUrlForVideoRecording() , recordingDelegate: self)
         
     }
@@ -128,7 +128,7 @@ class CaptureViewController: UIViewController, AVCaptureFileOutputRecordingDeleg
         loopPreviewPlayer.play()
         loopPreviewPlayer.actionAtItemEnd = .none
         NotificationCenter.default.addObserver(self, selector: #selector(CaptureViewController.loopPlayerDidEnd), name: .AVPlayerItemDidPlayToEndTime, object: self.loopPreviewPlayer.currentItem!)
-        UIView.animate(withDuration: 1.0) { 
+        UIView.animate(withDuration: 1.0) {
             self.overlayView.alpha = 0.5
             self.itemDetailView.alpha = 1.0
         }
@@ -150,16 +150,24 @@ class CaptureViewController: UIViewController, AVCaptureFileOutputRecordingDeleg
         
         Fireb.addItem(withTitle: nameTextField.text!, desciption: descTextView.text, Price: priceTextField.text!){
             (key) in
-            
-            SwiftSpinner.hide()
-            self.dismiss(animated: true, completion: { 
-                print("Dissmissed VC")
-            })
+            SwiftSpinner.show("Uploading Video")
+            do{
+                let data = try NSData(contentsOf: self.tempUrlForVideoRecording())
+                Fireb.uploadFileToServer( key, data: data! as Data){
+                    SwiftSpinner.hide()
+                    self.dismiss(animated: true, completion: {
+                        print("Dissmissed VC")
+                    })
+                }
+            }catch{
+                
+            }
+            //            SwiftSpinner.hide()
         }
         
         
     }
-
+    
 }
 
 

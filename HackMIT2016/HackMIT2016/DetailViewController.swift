@@ -56,15 +56,15 @@ class DetailViewController: UIViewController{
         let videoView = UIView(frame: CGRect(origin: CGPoint(x: self.view.bounds.origin.x,y :self.view.bounds.origin.y), size: CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height)))
         
         
-        let pathToEx1 = Bundle.main.path(forResource: "myVideoFile", ofType: "mp4")
-        let pathURL = NSURL.fileURL(withPath: pathToEx1!)
-        moviePlayer = MPMoviePlayerController(contentURL: pathURL)
-        if let player = moviePlayer {
-            player.view.frame = videoView.bounds
-            player.prepareToPlay()
-            player.scalingMode = .aspectFill
-            videoView.addSubview(player.view)
-        }
+//        let pathToEx1 = Bundle.main.path(forResource: "myVideoFile", ofType: "mp4")
+//        let pathURL = URL.fileURL(withPath: pathToEx1!)
+//        moviePlayer = MPMoviePlayerController(contentURL: pathURL)
+//        if let player = moviePlayer {
+//            player.view.frame = videoView.bounds
+//            player.prepareToPlay()
+//            player.scalingMode = .aspectFill
+//            videoView.addSubview(player.view)
+//        }
         
         self.view.addSubview(videoView)
     }
