@@ -12,6 +12,8 @@ class CaptureButton: UIButton {
     
     private var icon: UIImageView!
     
+    private let iconSize = CGSize(width: 40, height: 40)
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setup()
@@ -26,9 +28,7 @@ class CaptureButton: UIButton {
         
         self.backgroundColor = UIColor.red
         
-        self.icon = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        self.icon.backgroundColor = UIColor.blue
-        self.icon.center = self.center
+        self.icon = UIImageView(frame: CGRect(x: 10, y: 10, width: self.iconSize.width, height: self.iconSize.height))
         self.icon.image = UIImage(named: "camera")
         
         self.addSubview(self.icon)
