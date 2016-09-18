@@ -12,13 +12,20 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var captureButton: CaptureButton!
+    
     private let padding: CGFloat = 8
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //
+        self.captureButton.addTarget(self, action: #selector(HomeViewController.captureButtonAction), for: UIControlEvents.touchUpInside)
         
+    }
+    
+    func captureButtonAction() {
+        let captureVC = UIStoryboard(name: "HomePage", bundle: Bundle.main).instantiateViewController(withIdentifier: "CaptureVC")
+        self.present(captureVC, animated: false, completion: nil)
     }
     
     // MARK: - Collection View Delegate Functions
