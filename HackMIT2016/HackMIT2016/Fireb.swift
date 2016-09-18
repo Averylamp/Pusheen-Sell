@@ -21,6 +21,7 @@ class Fireb: NSObject {
         Fireba.rootRef.child("Items").childByAutoId().setValue(["title" : title, "description" : desc,"price" : price]) { (error, ref) in
             if error != nil {
                 print("Error posting item")
+                closure("")
                 
             }else{
                 closure(ref.key)
