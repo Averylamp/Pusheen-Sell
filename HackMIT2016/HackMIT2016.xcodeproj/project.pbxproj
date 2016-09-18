@@ -17,6 +17,7 @@
 		806EAA621D8DC06F00BABD42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806EAA611D8DC06F00BABD42 /* GoogleService-Info.plist */; };
 		806EAA641D8DC5D100BABD42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806EAA631D8DC5D100BABD42 /* Constants.swift */; };
 		BB3758361D8DC6CF001051EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3758351D8DC6CF001051EC /* AVFoundation.framework */; };
+		BB6819481D8E616100D746A8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6819471D8E616100D746A8 /* CoreMotion.framework */; };
 		BB7E4E1A1D8DBEE300E0CCF8 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E4E191D8DBEE300E0CCF8 /* Navigation.storyboard */; };
 		D8A469161D8E138000866912 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A469151D8E138000866912 /* CaptureButton.swift */; };
 		D8EE78771D8DAFFD00856D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE78761D8DAFFD00856D4A /* AppDelegate.swift */; };
@@ -45,6 +46,7 @@
 		806EAA631D8DC5D100BABD42 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		836177CF6C4E34C8983A368B /* Pods_HackMIT2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackMIT2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3758351D8DC6CF001051EC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BB6819471D8E616100D746A8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		BB7E4E191D8DBEE300E0CCF8 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
 		D8A469151D8E138000866912 /* CaptureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
 		D8EE78731D8DAFFD00856D4A /* HackMIT2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackMIT2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB6819481D8E616100D746A8 /* CoreMotion.framework in Frameworks */,
 				BB3758361D8DC6CF001051EC /* AVFoundation.framework in Frameworks */,
 				801836F21D8DD7AC0079A466 /* Bolts.framework in Frameworks */,
 				801836F01D8DCF560079A466 /* FBSDKShareKit.framework in Frameworks */,
@@ -81,6 +84,7 @@
 		4B5FD3DB3EADD3CC987A7988 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB6819471D8E616100D746A8 /* CoreMotion.framework */,
 				BB3758351D8DC6CF001051EC /* AVFoundation.framework */,
 				801836F11D8DD7AC0079A466 /* Bolts.framework */,
 				801836EB1D8DCF560079A466 /* FBSDKCoreKit.framework */,
